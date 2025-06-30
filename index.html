@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Fusion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Media Fusion</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#anime">Anime</a></li>
+      <li><a href="#games news">Game News</a></li>
+      <li><a href="#fan gallery">Fan Gallery</a></li>
+      <li><a href="#news">News</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <form action="/search" method="GET" class="search-form">
+        <input type="text" name="q" placeholder="Search..." />
+        <button type="submit">Go</button>
+      </form>
+
+      <a href="/signin" class="auth-link">Sign In</a>
+      <a href="/signup" class="auth-link">Sign Up</a>
+    </div>
+  </nav>
+
+  <main class="content-container">
+    <section class="left-section">
+      <h2>Games | Anime | Fan Gallery</h2>
+      <div class="gallery-thumbnails">
+        <img src="https://via.placeholder.com/100x70?text=Thumb+1" alt="Thumbnail 1" />
+        <img src="https://via.placeholder.com/100x70?text=Thumb+2" alt="Thumbnail 2" />
+        <img src="https://via.placeholder.com/100x70?text=Thumb+3" alt="Thumbnail 3" />
+        <img src="https://via.placeholder.com/100x70?text=Thumb+4" alt="Thumbnail 4" />
+        <img src="https://via.placeholder.com/100x70?text=Thumb+5" alt="Thumbnail 5" />
+      </div>
+    </section>
+
+    <section class="right-section">
+      <h2>Latest News</h2>
+      <article class="news-article">
+        <h3>New Anime Released</h3>
+        <p>Check out the latest anime hits this season!</p>
+      </article>
+      <article class="news-article">
+        <h3>Game Update Patch 1.2</h3>
+        <p>Details on the newest update and events in the game world.</p>
+      </article>
+      <article class="news-article">
+        <h3>Fan Art Contest Winners</h3>
+        <p>Announcing the winners of our fan art competition!</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

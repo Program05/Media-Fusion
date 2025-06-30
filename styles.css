@@ -1,0 +1,177 @@
+/* Reset and basic styles */
+body {
+  margin: 0;
+  background-color: black;
+  color: orange;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.site-header {
+  background-color: black;
+  padding: 15px 20px;
+  border-bottom: 2px solid orange;
+  text-align: center;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 20px;
+  border-bottom: 2px solid orange;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+/* Menu links */
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+.menu li a {
+  color: orange;
+  padding: 14px 15px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+.menu li a:hover {
+  background-color: darkorange;
+  color: black;
+}
+
+/* Right side nav (search + auth links) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  flex-grow: 1;
+  min-width: 0;
+}
+.search-form input[type="text"] {
+  padding: 6px 8px;
+  font-size: 16px;
+  border: 1px solid orange;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  color: orange;
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+.search-form input[type="text"]::placeholder {
+  color: orange;
+  opacity: 0.7;
+}
+.search-form button {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid orange;
+  border-left: none;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+.search-form button:hover {
+  background-color: darkorange;
+}
+
+/* Auth links */
+.auth-link {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 10px;
+  display: block;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  flex-shrink: 0;
+}
+.auth-link:hover {
+  background-color: darkorange;
+  color: black;
+}
+
+/* Main content container */
+.content-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  color: orange;
+  background-color: black;
+}
+
+/* Left and right sections each take half width */
+.left-section,
+.right-section {
+  flex: 1;
+}
+
+/* Gallery thumbnails layout */
+.gallery-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery-thumbnails img {
+  width: 100px;
+  height: auto;
+  border: 2px solid orange;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.gallery-thumbnails img:hover {
+  transform: scale(1.05);
+  border-color: darkorange;
+}
+
+/* News articles styling */
+.news-article {
+  margin-bottom: 20px;
+}
+.news-article h3 {
+  margin: 0 0 5px 0;
+}
+.news-article p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .gallery-thumbnails img {
+    width: 48%;
+  }
+}
