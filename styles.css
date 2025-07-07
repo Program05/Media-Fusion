@@ -1,9 +1,9 @@
-/* Reset and basic styles */
 body {
   margin: 0;
   background-color: black;
   color: orange;
   font-family: Arial, sans-serif;
+  line-height: 1.5; /* Added for better readability */
 }
 
 /* Header */
@@ -174,4 +174,29 @@ nav {
   .gallery-thumbnails img {
     width: 48%;
   }
+}
+
+/* Table styles for release schedule */
+.release-schedule table {
+  border-collapse: collapse; /* Merge adjacent borders */
+  width: 100%;               /* Make table full width of container */
+  margin-top: 10px;
+}
+
+.release-schedule th,
+.release-schedule td {
+  border: 1px solid orange;  /* Orange border around cells */
+  padding: 8px 12px;         /* Padding inside cells */
+  text-align: left;          /* Align text to left */
+  color: orange;             /* Text color */
+  background-color: black;   /* Match background */
+}
+
+.release-schedule th {
+  font-weight: bold;
+  background-color: #222;    /* Slightly darker header background */
+}
+
+.release-schedule tbody tr:hover {
+  background-color: #333;    /* Highlight row on hover */
 }
