@@ -39,7 +39,10 @@ nav {
   margin: 0;
   padding: 0;
   flex-shrink: 0;
+  justify-content: space-between;
+  width: 60%; /* adjust as needed */
 }
+
 .menu li a {
   color: orange;
   padding: 14px 15px;
@@ -199,4 +202,84 @@ nav {
 
 .release-schedule tbody tr:hover {
   background-color: #333;    /* Highlight row on hover */
+}
+/* Visually hidden label for screen readers */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* CTA buttons */
+.cta-button {
+  background-color: orange;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: darkorange;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: orange;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid orange;
+}
+footer ul.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin-top: 10px;
+}
+footer ul.social-links li a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer ul.social-links li a:hover {
+  color: darkorange;
+}
+
+/* Accessibility: focus outlines */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid darkorange;
+  outline-offset: 2px;
+}
+.cta-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+.must-watch table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.must-watch th,
+.must-watch td {
+  border: 1px solid orange;
+  padding: 8px 12px;
+  text-align: left;
+  color: orange;
+  background-color: black;
+}
+
+.must-watch th {
+  font-weight: bold;
+  background-color: #222;
+}
+
+.must-watch tbody tr:hover {
+  background-color: #333;
 }
