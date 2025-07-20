@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fan Gallery - Media Fusion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo-link">
+      <img 
+        src="https://cdn.pixabay.com/photo/2012/04/01/12/39/joystick-23234_1280.png" 
+        alt="Media Fusion arcade joystick logo" 
+        class="logo-image" />
+      <span class="site-title">Media Fusion: Anime & Games Hub</span>
+    </a>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="anime.html">Anime</a></li>
+      <li><a href="games-news.html">Game News</a></li>
+      <li><a href="fan-gallery.html" aria-current="page">Fan Gallery</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <form action="/search" method="GET" class="search-form">
+        <label for="search" class="visually-hidden">Search</label>
+        <input type="text" id="search" name="q" placeholder="Search..." required />
+        <button type="submit">Go</button>
+      </form>
+
+      <a href="/signin" class="auth-link">Sign In</a>
+      <a href="/signup" class="auth-link">Sign Up</a>
+    </div>
+  </nav>
+
+  <main style="text-align: center;">
+  <h1>Fan Art Gallery</h1>
+  <p>Check out some amazing fan art from the community!</p>
+
+  <div class="cta-wrapper">
+    <a href="#submit" class="cta-button">Submit Your Fan Art!</a>
+  </div>
+
+  <main class="content">
+    <section class="gallery">
+      <img src="https://cdn.pixabay.com/photo/2018/04/13/16/13/pixel-3316924_1280.png" alt="Pixel-style fantasy warrior" />
+      <img src="https://cdn.pixabay.com/photo/2018/08/27/09/53/fungi-3634586_1280.png" alt="Fantasy mushroom character art" />
+      <img src="https://cdn.pixabay.com/photo/2020/01/17/07/47/cat-4772436_960_720.png" alt="Cute pixel-style cat with game controller" />
+      <img src="https://cdn.pixabay.com/photo/2022/03/12/07/29/dragon-7063555_640.png" alt="Purple fantasy dragon fan art" />
+      <img src="https://cdn.pixabay.com/photo/2024/07/26/05/54/girl-8922722_1280.png" alt="Anime-style girl with headphones" />
+    </section>
+  </main>
+
+  <section id="submit" class="submission-form">
+    <h2>Submit Your Fan Art</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="title">Artwork Title:</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="image">Upload Your Artwork:</label>
+      <input type="file" id="image" name="image" accept="image/*" required />
+
+      <label for="description">Description (optional):</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <button type="submit">Submit Art</button>
+    </form>
+  </section>
+</main>
+
+
+  <footer>
+    <p>© 2025 Media Fusion.</p>
+    <ul class="social-links">
+      <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+      <li><a href="https://discord.com" target="_blank">Discord</a></li>
+      <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

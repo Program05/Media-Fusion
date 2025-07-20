@@ -283,3 +283,100 @@ input:focus {
 .must-watch tbody tr:hover {
   background-color: #333;
 }
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center content horizontally */
+  gap: 20px; /* space between logo and title */
+  padding: 10px 20px;
+  background-color: #000; /* example black background */
+  color: orange;
+}
+
+/* Logo link container uses flex to align items left and right if needed */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: orange;
+}
+
+/* Add margin right to the logo image to create space */
+.logo-image {
+  width: 50px; /* size of the logo */
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Make the site title text bigger */
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.submission-form {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  background-color: #1e1e1e; /* Darker grey */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: black;
+}
+
+.submission-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: orange;
+}
+
+.submission-form label {
+  display: block;
+  margin-top: 1rem;
+  color: orange; /* Label titles like “Your Name” */
+}
+
+.submission-form input,
+.submission-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background-color: #f4f4f4;
+  color: black; /* Writing inside the input boxes */
+}
+
+.submission-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submission-form button:hover {
+  background-color: #e69500;
+}
