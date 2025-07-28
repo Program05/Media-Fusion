@@ -380,3 +380,11 @@ input:focus {
 .submission-form button:hover {
   background-color: #e69500;
 }
+@media (max-width: 768px) {
+  nav a {
+    display: inline-block;
+    min-width: 46px;
+    min-height: 46px;
+    font-size: 18px; /* or any size that fits your layout well */
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign In / Sign Up - Media Fusion</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="sign-up-sign-in.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo-link">
+      <img src="https://cdn.pixabay.com/photo/2012/04/01/12/39/joystick-23234_1280.png" alt="Media Fusion arcade joystick logo" class="logo-image" />
+      <span class="site-title">Media Fusion: Anime & Games Hub</span>
+    </a>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="anime.html">Anime</a></li>
+      <li><a href="games-news.html">Game News</a></li>
+      <li><a href="fan-gallery.html">Fan Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Welcome Back! Please Sign In or Sign Up</h1>
+    
+    <div class="tabs" role="tablist">
+      <div class="tab active" id="signInTab" role="tab" aria-selected="true" tabindex="0">Sign In</div>
+      <div class="tab" id="signUpTab" role="tab" aria-selected="false" tabindex="0">Sign Up</div>
+    </div>
+    
+    <div id="signInForm" class="form-container" role="tabpanel" aria-labelledby="signInTab">
+      <form id="formSignIn">
+        <label for="signin-email">Email:</label>
+        <input type="email" id="signin-email" name="email" required />
+        
+        <label for="signin-password">Password:</label>
+        <input type="password" id="signin-password" name="password" required />
+        
+        <div id="signInError" class="error"></div>
+        
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+    
+    <div id="signUpForm" class="form-container" role="tabpanel" aria-labelledby="signUpTab" hidden>
+      <form id="formSignUp">
+        <label for="signup-name">Full Name:</label>
+        <input type="text" id="signup-name" name="fullname" required />
+        
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" name="email" required />
+        
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="password" required />
+        
+        <label for="signup-password2">Confirm Password:</label>
+        <input type="password" id="signup-password2" name="password2" required />
+        
+        <div id="signUpError" class="error"></div>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Media Fusion.</p>
+  </footer>
+
+  <script src="sign-up-sign-in.js"></script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Stay up-to-date with trending video game news, upcoming releases, and reviews.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Games - Media Fusion</title>
   <link rel="stylesheet" href="styles.css" />
@@ -26,16 +27,18 @@
       <li><a href="games-news.html">Game News</a></li>
       <li><a href="fan-gallery.html">Fan Gallery</a></li>
     </ul>
-    
-    <div class="nav-right">
-      <form action="/search" method="GET" class="search-form">
-        <label for="search" class="visually-hidden">Search</label>
-        <input type="text" id="search" name="q" placeholder="Search..." required />
-        <button type="submit">Go</button>
-      </form>
-      <a href="/signin" class="auth-link">Sign In</a>
-      <a href="/signup" class="auth-link">Sign Up</a>
-    </div>
+
+<div class="nav-right">
+  <form action="/search" method="GET" class="search-form">
+    <label for="search" class="visually-hidden">Search</label>
+    <input type="text" id="search" name="q" placeholder="Search..." required />
+    <button type="submit">Go</button>
+  </form>
+
+  <a href="sign-up-sign-in.html?mode=signin" class="auth-link">Sign In</a>
+  <a href="sign-up-sign-in.html?mode=signup" class="auth-link">Sign Up</a>
+</div>
+
   </nav>
 
   <main>
@@ -63,6 +66,12 @@
       alt="Retro arcade game machines with colorful joysticks and buttons" 
       style="width: 300px; height: auto; margin-left: 20px;" />
   </main>
+
+<section class="cta-section">
+  <h2>Into Gaming?</h2>
+  <p>Don't miss major updates, new releases, and gaming trends!</p>
+  <a href="contact.html" class="cta-button">Get Game Updates</a>
+</section>
 
   <footer>
     <p>© 2025 Media Fusion.</p>

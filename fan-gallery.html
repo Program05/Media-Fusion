@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Browse our OtakuLife gallery featuring fan art, screenshots, and exclusive images from your favorite anime and games.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fan Gallery - Media Fusion</title>
   <link rel="stylesheet" href="styles.css" />
@@ -27,15 +28,16 @@
     </ul>
 
     <div class="nav-right">
-      <form action="/search" method="GET" class="search-form">
-        <label for="search" class="visually-hidden">Search</label>
-        <input type="text" id="search" name="q" placeholder="Search..." required />
-        <button type="submit">Go</button>
-      </form>
+  <form action="/search" method="GET" class="search-form">
+    <label for="search" class="visually-hidden">Search</label>
+    <input type="text" id="search" name="q" placeholder="Search..." required />
+    <button type="submit">Go</button>
+  </form>
 
-      <a href="/signin" class="auth-link">Sign In</a>
-      <a href="/signup" class="auth-link">Sign Up</a>
-    </div>
+  <a href="sign-up-sign-in.html?mode=signin" class="auth-link">Sign In</a>
+  <a href="sign-up-sign-in.html?mode=signup" class="auth-link">Sign Up</a>
+</div>
+
   </nav>
 
   <main style="text-align: center;">
