@@ -1,20 +1,13 @@
-/* Basic Reset */
-* {
-  box-sizing: border-box;
-}
-
-/* Container styling */
 .container {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #222; /* dark grey background */
+  background-color: #222; 
   border-radius: 8px;
-  color: white;
-  font-family: Arial, sans-serif;
+  color: white; 
+  font-family: Arial, sans-serif; 
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
@@ -38,7 +31,6 @@
   font-weight: bold;
 }
 
-/* Forms */
 form {
   display: none;
   flex-direction: column;
@@ -62,26 +54,26 @@ input {
   font-size: 1em;
 }
 
-/* Buttons */
-button {
-  background-color: orange;
-  border: none;
-  padding: 12px;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #e67300;
-}
-
 /* Error message */
 .error {
   color: #ff4c4c;
   font-size: 0.9em;
   margin-bottom: 10px;
   display: none;
+}
+
+button {
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkorange;
 }

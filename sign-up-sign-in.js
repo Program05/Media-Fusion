@@ -7,11 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const signInTab = document.getElementById('signInTab');
   const signUpTab = document.getElementById('signUpTab');
 
+  const signInFormElement = document.getElementById('formSignIn');
+  const signUpFormElement = document.getElementById('formSignUp');
+
   function showSignIn() {
     signInForm.hidden = false;
     signUpForm.hidden = true;
     signInTab.classList.add('active');
     signUpTab.classList.remove('active');
+
+    signInFormElement.classList.add('active');
+    signUpFormElement.classList.remove('active');
   }
 
   function showSignUp() {
@@ -19,12 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
     signUpForm.hidden = false;
     signInTab.classList.remove('active');
     signUpTab.classList.add('active');
+
+    signInFormElement.classList.remove('active');
+    signUpFormElement.classList.add('active');
   }
+
+  signInTab.addEventListener('click', showSignIn);
+  signUpTab.addEventListener('click', showSignUp);
 
   if (mode === 'signup') {
     showSignUp();
   } else {
-    // Default to sign in if mode missing or 'signin'
     showSignIn();
   }
 });
